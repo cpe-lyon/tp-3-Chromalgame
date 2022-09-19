@@ -39,4 +39,9 @@
 10. Définissez un umask très restrictif qui interdit à quiconque à part vous l’accès en lecture ou en écriture, ainsi que la traversée de vos répertoires. Testez sur un nouveau fichier et un nouveau répertoire. Le umask sera `077`.
 11. Définissez un umask très permissif qui autorise tout le monde à lire vos fichiers et traverser vos répertoires, mais n’autorise que vous à écrire. Testez sur un nouveau fichier et un nouveau répertoire. Le umask sera `022`.
 12. Définissez un umask équilibré qui vous autorise un accès complet et autorise un accès en lecture aux membres de votre groupe. Testez sur un nouveau fichier et un nouveau répertoire. Le umask sera `027`
-13. 
+13. Transcrivez les commandes suivantes de la notation classique à la notation octale ou vice-versa (vous pourrez vous aider de la commande stat pour valider vos réponses) : 
+	* chmod u=rx,g=wx,o=r fic `534`
+	* chmod uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x--- `602`
+	* chmod 653 fic en sachant que les droits initiaux de fic sont 711 `rw-r-x-wx`
+	* chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x--- `520`
+14. Avec la commande `ll` on obtient `-rw-r--r--`. Je remarque que le fichier est en lecture seulement et que l'owner peux écrire dedans. Il est important de ne pas pouvoir le modifier car il s'agit des informations des utilisateurs.
