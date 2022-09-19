@@ -35,4 +35,5 @@
 6. Le droit d'écriture empèche juste d'écrire dans le fichier mais on peut toujours le lire et l'exécuter de plus le fichier peux être supprimer si le dossier a les droits d'écriture. Il est tout de même demandé si nous sommes sûr de vouloir supprimer le fichier nouveau en écriture seulement.
 7. Le droit d'exécution ne permet pas de créer ou de modifier des fichiers dans le dossier ni de s'y déplacer.
 8. Il est toujours impossible de faire quoi que ce soit cependant nous pouvont quand même revenir dans le dossier parent.
-9. 
+9. Rétablissez le droit en exécution du répertoire test. Attribuez au fichier fichier les droits suffisants pour qu’une autre personne de votre groupe puisse y accéder en lecture, mais pas en écriture.  `sudo chmod 755 /home/test/fichier`
+10. 
